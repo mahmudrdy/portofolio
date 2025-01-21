@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    list-style: none;
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    border: none;
+}
+header {
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    background-color: transparent;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    right: 0;
+}
+nav {
+    width: 35%;
+}
+nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+nav ul li a {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-size: 15px;
+}
+.logo {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 700;  
+    font-size: 20px;
+}
+.containAside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    height: 300px;
+    width: 50px;
+    position: fixed;
+    top: 30%;
+    right: 0;
+    z-index: 70;
+    background-color: white;
+    opacity: .5;
+    border-radius: 30px 0px 0px 30px;
+    gap: 30px;
+    font-size: 20px;
+}
+section {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #06141B;
+    padding: 100px;
+}
+.home {
+    background-color: #06141B;
+    display: flex;
+    align-items: center;
+}
+.containerhome {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 700; 
+}
+h1 {
+    font-size: 35px;
+}
+.containerImage {
+    height: 270px;
+    width: 270px;
+    border-radius: 10px;
+    background-color: orange;
+    position: relative;
+    right: 60px;
+    transform: rotate(45deg);
+}
+.containerImage:before{
+    content: "";
+    height: 270px;
+    width: 270px;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 1px solid orange;
+    position: absolute;
+    right: 0;
+    transform: rotate(100deg);
+}
+.image {
+
+}
+button {
+    padding: 8px;
+    background-color: orange;
+    border-radius: 5px;
+}
+.abaut {
+    background-color: #06141B;
+    display: flex;
+    align-items: center;
+}
+.containerabaut {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.textAbaut {
+    width: 50%;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-size: 15px;
+}
+.containerImageabaut {
+    height: 270px;
+    width: 270px;
+    border-radius: 10px;
+    background-color: orange;
+    position: relative;
+    left: 60px;
+    transform: rotate(45deg);
+}
+.containerImageabaut::before{
+    content: "";
+    height: 270px;
+    width: 270px;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 1px solid orange;
+    position: absolute;
+    right: 0;
+    transform: rotate(100deg);
+}
+.services, .project, .contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.textAlign h1 {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-size: 30px;
+}
+.containerservices, .containerproject{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.Progreming,.Web,.Design {
+    height: 250px;
+    width: 320px;
+    background-color: transparent;
+    border-radius: 3px;
+    border: 1px solid orange;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 200px;
+}
+.project1,.project2,.project3 {
+    height: 250px;
+    width: 320px;
+    background-color: transparent;
+    border-radius: 3px;
+    border: 1px solid orange;
+}
+.contact {
+  width: 100%;
+}
+.containercontact {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    margin-top: 20px;
+}
+.contentContact{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background-color: transparent;
+    border: 1px solid orange;
+}
+input, textarea {
+    padding: 10px;
+    color: #06141B;
+    border-radius: 3px;
+}
+.contactSosmed {
+    padding: 20px;
+}
+@media screen and (max-width: 700px){
+    nav {
+        display: none;
+    }
+    .home, .abaut, header{
+        padding: 50px;
+    }
+    .containerhome,.containerabaut{
+        flex-direction: column;
+    }
+    .containerImage {
+        height: 200px;
+        width: 200px;
+        background-color: orange;
+        position: relative;
+        right: 0;
+        top: 70px;
+        transform: rotate(45deg);
+    }
+    .containerImage:before{
+        content: "";
+        height: 200px;
+        width: 200px;
+        border-radius: 10px;
+        background-color: transparent;
+        border: 1px solid orange;
+        position: absolute;
+        right: 0;
+        transform: rotate(100deg);
+    }
+    .textAbaut {
+        width: 100%;
+    }
+    .containerImageabaut {
+        height: 200px;
+        width: 200px;
+        background-color: orange;
+        position: relative;
+        left: 0;
+        bottom: 70px;
+        transform: rotate(45deg);
+    }
+    .containerImageabaut:before{
+        content: "";
+        height: 200px;
+        width: 200px;
+        border-radius: 10px;
+        background-color: transparent;
+        border: 1px solid orange;
+        position: absolute;
+        right: 0;
+        transform: rotate(100deg);
+    }
+    .containerservices {
+        width: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .Progreming,.Web,.Design {
+        height: 200px;
+        width: 300px;
+    }
+    .containerproject {
+        width: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .project1,.project2,.project3 {
+        height: 200px;
+        width: 300px;
+    }
+    .containercontact {
+        flex-direction: column;
+    }
+    .contentContact {
+        width: 300px;
+    }
+    .contactSosmed {
+      width: 300px;
+      background-color: green;
+    }
+
+}
